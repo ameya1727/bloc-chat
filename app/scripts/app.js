@@ -7,11 +7,11 @@
          });
          
          $stateProvider
-//             .state('ActiveTasks', {
-//                 url: '/',
-//                 controller: 'ActiveTasksCtrl as ActiveTasks',
-//                 templateUrl: '/templates/ActiveTasks.html'
-//             })
+             .state('rooms', {
+                 url: '/',
+                 controller: 'rooms as rooms',
+                 templateUrl: '/templates/rooms.html'
+             })
 //             .state('AddTask', {
 //                 url: '/add',
 //                 controller: 'AddTaskCtrl as AddTask',
