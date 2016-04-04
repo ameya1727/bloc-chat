@@ -9,12 +9,18 @@
         // add new items to the array
         $scope.addRoom = function() {
             console.log('in here')
-            $scope.rooms.push({
-                text: $scope.newRoomText,
-                text: $scope.newUsernameText,
-                status: 'active'
+            $scope.rooms.$add({
+                roomName: $scope.newRoomText,
+                userName: $scope.newUsernameText 
             });
         }; 
+        
+       var chatrooms = $firebaseArray(roomsRef.child('roomsCtrl'));
+
+        return {
+          all: chatrooms
+        };
+    
     }
     angular
         .module('blocChat')
