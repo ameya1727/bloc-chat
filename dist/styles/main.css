@@ -29,6 +29,7 @@ table {
     height: 100%;
     font-size: 0.925rem;
 }
+
 tr, th, td {
     padding: 5px;
     border-bottom: solid 1px black;
@@ -69,6 +70,7 @@ p {
 }
 
 #nav-wrapper {
+    max-width: 1000px;
     background-color: burlywood;
     border-bottom: 2px solid orange;
     text-shadow: 1px 1px orange;
@@ -81,8 +83,16 @@ p {
     padding: 0;
 }
 
-.lcolumn{
+.lcolumn {
     width:300px;
+    float: left;
+    
+}
+
+.rcolumn {
+    padding-left: 315px;
+    padding-top: 15px;
+    
 }
 
 .footer {

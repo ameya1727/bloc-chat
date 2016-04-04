@@ -1,5 +1,5 @@
 <div ng-controller="roomsCtrl">
-    <div class="wrapper row">
+    <div class="wrapper">
         <div id="wrapper" class="col-md-3 col-xs-12 lcolumn">
             <table>
                 <th>Chat Rooms</th>
@@ -8,12 +8,12 @@
                 </tr>
             </table>
         </div>
-        <div id="wrapper" class="col-md-9 col-xs-12">
+        <div id="wrapper" class="col-md-9 col-xs-12 rcolumn">
             <form name="roomForm" ng-submit="addRoom()" id="formRoom" class="navbar-link">
                 <label for="nameInput">Add A new room:</label>
-                <input ng-model="newRoomText" class="input-field text-field" required/><br>
-                <label for="nameInput">Add Username:</label>
-                <input ng-model="newUsernameText" class="input-field text-field" required/><br>
+                <input ng-model="newRoomText" class="input-field text-field" required/><br><br>
+                <label for="nameInput">Add a Username:</label>
+                <input ng-model="newUsernameText" class="input-field text-field" required/><br><br>
                 <button type="submit" class="btn ghost">Create Room</button>
             </form>
         </div>
