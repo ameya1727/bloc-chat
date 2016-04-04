@@ -1,0 +1,21 @@
+<div ng-controller="roomsCtrl">
+    <div class="wrapper row">
+        <div id="wrapper" class="col-md-3 col-xs-12 lcolumn">
+            <table>
+                <th>Chat Rooms</th>
+                <tr ng-repeat="chatrooms in rooms">
+                    <td>{{ chatrooms.roomName }}</td>
+                </tr>
+            </table>
+        </div>
+        <div id="wrapper" class="col-md-9 col-xs-12">
+            <form name="roomForm" ng-submit="addRoom()" id="formRoom" class="navbar-link">
+                <label for="nameInput">Add A new room:</label>
+                <input ng-model="newRoomText" class="input-field text-field" required/><br>
+                <label for="nameInput">Add Username:</label>
+                <input ng-model="newUsernameText" class="input-field text-field" required/><br>
+                <button type="submit" class="btn ghost">Create Room</button>
+            </form>
+        </div>
+    </div>
+</div>

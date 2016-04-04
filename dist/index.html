@@ -19,9 +19,11 @@
     <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
     <!-- AngularFire -->
     <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
-<!--    <script src="/scripts/respond.js"></script>-->
+    <script src="/scripts/respond.js"></script>
     <script src="/scripts/app.js"></script>
+    <script src="/scripts/controllers/roomsCtrl.js"></script>
 </head>
+<<<<<<< HEAD
 <body>
     <div class="container">
     <h1>Welcome to Bloc Chat!</h1>
@@ -36,5 +38,28 @@
             <ui-view></ui-view>
         </div>
     </div>
+=======
+<body class="container-fluid" id="container-main">
+    <div id="nav-wrapper">
+        <h1>Welcome to Bloc Chat!</h1>
+<!--
+        <div class="navbar">
+            <div class="links-container">
+             <a ui-sref="rooms" class="navbar-link">Chat Rooms</a>
+             <a ui-sref="DoneTasks" class="navbar-link">All Rooms</a>
+         </div>
+        </div>
+        <div class="content">
+            <ui-view></ui-view>
+        </div>
+-->
+    </div>
+        <ui-view></ui-view>
+<!--
+    <div class="footer">
+        <p>AmeyaAthalye &copy; 2016</p>
+    </div>
+-->
+>>>>>>> master
 </body>
 </html>

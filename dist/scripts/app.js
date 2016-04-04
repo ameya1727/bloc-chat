@@ -7,6 +7,7 @@
          });
          
          $stateProvider
+<<<<<<< HEAD
 //             .state('ActiveTasks', {
 //                 url: '/',
 //                 controller: 'ActiveTasksCtrl as ActiveTasks',
@@ -22,6 +23,13 @@
 //                 controller: 'AddTaskCtrl as DoneTasks',
 //                 templateUrl: '/templates/doneTasks.html'         
 //             });
+=======
+             .state('rooms', {
+                 url: '/',
+                 controller: 'roomsCtrl as rooms',
+                 templateUrl: '/templates/rooms.html'
+             })
+>>>>>>> master
         }
  
      angular
