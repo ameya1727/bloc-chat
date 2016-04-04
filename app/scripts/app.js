@@ -9,19 +9,9 @@
          $stateProvider
              .state('rooms', {
                  url: '/',
-                 controller: 'rooms as rooms',
+                 controller: 'roomsCtrl as rooms',
                  templateUrl: '/templates/rooms.html'
              })
-//             .state('AddTask', {
-//                 url: '/add',
-//                 controller: 'AddTaskCtrl as AddTask',
-//                 templateUrl: '/templates/AddTask.html'         
-//             })
-//             .state('DoneTasks', {
-//                 url: '/done',
-//                 controller: 'AddTaskCtrl as DoneTasks',
-//                 templateUrl: '/templates/doneTasks.html'         
-//             });
         }
  
      angular
